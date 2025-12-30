@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"  >
+    <meta name="description" content="multiple pages in a website" >
+    <title> Multiple pages website</title>
+
+    <style>
+        body{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        #top-div{
+            margin-top: 5rem;
+            margin-left: 18rem;
+             border: 3px solid black;
+             border-radius: 2px;
+    
+               width:55%;
+        }
+        a{
+            text-decoration: none;
+            /* padding-left: 0.3rem; */
+            padding-right: 0.3rem;
+            padding-left: 1rem;
+            padding-bottom: 2rem;
+            color: #0066cc;
+            font-family: sans-serif;
+        }
+        #nav-bar{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 2rem;
+            font-family: sans-serif;
+            padding-right: 1rem;
+        }
+        .second-div{
+            text-align: center;
+            padding-bottom: 5rem;
+        }
+        span{
+            color: lightslategray;
+            font-family: sans-serif;
+        }
+         #main-div{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+             grid-template-rows: repeat(1,1fr) 
+        } 
+         #here-div{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            border-top: 2px solid black;
+         }
+        #edu-div{
+            line-height: 39px;
+            border: 2px solid black;
+            border-right: none;
+            
+
+        
+        }
+        #edu-p{
+            line-height: 19px; 
+            padding-left: 1.2rem;
+            font-size: 16px; 
+            font-family: sans-serif;
+
+            font-weight: 50rem;
+
+        
+        }
+        #edu-text{
+             line-height:10px ; 
+            padding-left: 1.2rem;
+            font-family: sans-serif;
+        
+        
+            
+        }
+        h2{
+            padding-left: 1.2rem;
+
+            /* Import the main hand-drawn font */
+                @font-face {
+                font-family: "Virgil";
+                src: url("https://excalidraw.com/Virgil.woff2") format("woff2");
+                font-display: swap;
+}
+
+
+                @font-face {
+                font-family: "Cascadia";
+                src: url("https://excalidraw.com/Cascadia.woff2") format("woff2");
+                    font-display: swap;
+}
+        }
+        #first-div{
+            border: 2px solid black;
+            border-left: none; 
+            width: 99.9%;
+            height: 99.1;
+        }
+        .p-tag{
+            border-bottom: 2px solid black;
+            line-height: 27px;
+            padding-left: 1rem;
+     } 
+     .u-tag{
+        padding-left: 1rem;
+     }
+     #source-sec{
+        border-top: 2px solid black;
+        height: 80%;
+        border-bottom: 2px solid black;
+     }
+     .work{
+        padding-left: 1rem;
+        /* margin-top: 1px; */
+        margin-bottom: 0.8rem;
+        line-height: 2px;
+        font-family: sans-serif;
+     }
+     #work-div{
+        margin-bottom: 2rem;
+     }
+     .open{
+        padding-left: 1rem;
+        
+     }
+     /* footer{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+     } */
+
+      #review-div{
+        display: flex;
+        flex-direction: column; 
+      }  
+     .f-footer{
+        border: 2px solid black;
+        border-radius: 40px;
+        display: flex;
+        flex-direction: column;
+        padding-left: 0.9rem;
+        padding-top: 0.7rem;
+        padding-bottom: 1.5rem;
+        margin: 0.7rem;
+    }
+    #foot-end{
+        display: flex;
+        flex-direction: row;
+        padding: 1rem;
+        margin-right: 1rem;
+    }
+    #end{
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+    
+
+    /* Import the main hand-drawn font */
+@font-face {
+  font-family: "Virgil";
+  src: url("https://excalidraw.com/Virgil.woff2") format("woff2");
+  font-display: swap;
+}
+/* 
+Optional: Import the monospace font for code snippets */
+@font-face {
+  font-family: "Cascadia";
+  src: url("https://excalidraw.com/Cascadia.woff2") format("woff2");
+  font-display: swap;
+    }
+    .a-tag{
+        color: black;
+    }
+    </style>
+
+
+</head>
+<body>
+
+    <div id="top-div">
+        <header>
+            <nav id="nav-bar">
+                <h2>your name</h2>
+                <ul >
+                    <a href="homepage.html" class="a-tag">Home   </a>/
+                    <a href="projects.html" class="a-tag">Projects   </a>/
+                    <a href="article.html" class="a-tag">Articles   </a>/
+                    <a href="contact.html" class="a-tag">Contact   </a>
+                </ul>
+            </nav>
+            <div class="second-div">
+                <h1 id="h1-tag" style=" font-family: Virgil;font-weight: normal;font-size: 2.4rem;">Frontend Developer</h1>
+                <span style="font-size: sans-serif;">html only proper layout,no styling</span>
+            </div>
+        </header>
+        <main id="main-div">
+            <div id="first-div">
+                <aside>
+                    <h2  style="font-family: Virgil; font-weight: normal;">Projects</h2>
+                    <p class="p-tag">HTML Only Portfolio</p>
+                    <p class="p-tag">Calculator</p>
+                    <p class="p-tag">Quiz App</p>
+                    <p class="p-tag">Countdown Timer</p>
+                    <p class="u-tag">Product Upcoming Page</p>
+                </aside>
+            </div>
+            <div id="here-div">
+            <section id="work-div">
+                <h2 style="font-family: Virgil;font-weight: normal;">work Experience</h2>
+                <p class="work" style="font-family: Virgil;font-weight: normal;">roadmap.sh</p>
+                <p class="work">Solved all the frontend projects</p>
+                <a  href="">Visit my profile</a>
+            </section>
+            <section id="source-sec">
+                <h2 style="font-family: Virgil;font-weight: normal;">Opensource Work</h2>
+                <p class="open">Contributed to 50 Opensource
+                    projects.Made my own projects
+                with 200 Github Stars</p>
+                <a href="">Visit my Github Profile</a>
+            </section></div>
+            <aside id="edu-div">
+                <h2 style="font-family: Virgil;font-weight: normal;">Education</h2>
+                <div id="edu-data">
+                <p id="edu-p">Gratuted with 3.76 out of 4
+                    CGPA.Won Acme Hackathon.
+                    Organzies 30 session.
+                </p>
+                <section id="edu-text" >
+                <p>Course I took:</p>
+                <br>
+                <p>-Object Oriented Progamming</p>
+
+                <p>-Data Structures 
+                    
+                    and Algorithms</p>
+                <p>-Web Engineering</p>
+                <p>-Artificial Intelligence</p>
+                <p>-Human Computer Interaction</p>
+                <p>-Computer Graphics</p>
+                <p id="data">-Database Management Systems</p>
+                <p>-Distributed Database Systems</p>
+                <p>-Discreet Mathematics</p>
+                </section>
+            </div>
+            </aside>
+        </main>
+        <footer>
+            <div>
+                <h2 style="font-family: Virgil;font-weight: normal;">Review from my teachers</h2>
+            </div>
+            <div id="review-div">
+            <div id="foot-end">
+            <div class="f-footer" id="first-review">
+                <p>John doe was a brilliant
+                    students;always stood out
+                    with his assignments.
+                </p>
+                <span>Jane Doe</span>
+                <span>Assistance Professor </span>
+            </div>
+            <div class="f-footer">
+                <p>John doe was a brilliant
+                    students;always stood out
+                    with his assignments.
+                </p>
+                <span>Jane Doe</span>
+                <span>Assistance Professor </span>
+
+            </div>
+            <div class="f-footer">
+                <p>John doe was a brilliant
+                    students;always stood out
+                    with his assignments.
+                </p>
+                <span>Jane Doe</span>
+                <span>Assistance Professor </span>
+
+            </div></div>
+            </div>
+            <p id="end" style="font-family: Virgil;font-weight: normal;">
+                &#169 all rights reserved 2025
+            </p>
+
+        </footer>
+    </div>
+</body>
+</html>
